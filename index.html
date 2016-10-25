@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tic Tac Toe</title>
+  </head>
+  <link rel="stylesheet" href="style.css">
+  <body>
+    <div class="container">
+      <div id = "menu1">
+        <div>
+          <h1>Tic Tac Toe</h1>
+          <p>
+            How do you want to play?
+          </p>
+          <button type="button" id="p1">Play VS Computer</button>
+          <button type="button" id="p2">Player 1 VS Player 2</button>
+        </div>
+      </div>
+      <div id = "menu2">
+        <div>
+          <p>
+            Player 1 Choose:
+          </p>
+          <div id="mark">
+            <button type="button" id="o" >O</button>
+            <span> or </span>
+            <button type="button" id="x">X</button>
+          </div>
+        </div>
+      </div>
+      <div id="board-container">
+        <button id="quit">Quit</button>
+        <div id="stat-wrap">
+          <p id="status">PLAYER 1's TURN</p>
+        </div>
+        <table cellpadding="5" id="board">
+          <tr>
+            <td data-move="0"></td>
+            <td data-move="1"></td>
+            <td data-move="2"></td>
+          </tr>
+          <tr>
+            <td data-move="3"></td>
+            <td data-move="4"></td>
+            <td data-move="5"></td>
+          </tr>
+          <tr>
+            <td data-move="6"></td>
+            <td data-move="7"></td>
+            <td data-move="8"></td>
+          </tr>
+        </table>
+        <div class="score1-wrap">
+          <span class="score">0</span><br>
+          Player 1
+        </div>
+        <div class="score3-wrap">
+          <span class="score">0</span><br>
+          Draw
+        </div>
+        <div class="score2-wrap">
+          <span class="score">0</span><br>
+          <span id="opponent">Player 2</span>
+        </div>
+      </div>
+    </div>
+    <script src="app.js" charset="utf-8"></script>
+  </body>
+</html>

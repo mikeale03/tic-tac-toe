@@ -1,0 +1,129 @@
+table, td {
+  border: 1px solid;
+  border-collapse: collapse;
+  margin: 0 auto;
+  text-align: center;
+}
+table {
+  color: #053819;
+}
+td {
+  width: 100px;
+  height: 100px;
+  font-size: 3em;
+  font-family: monospace;
+  transition: all 0.4s;
+}
+
+td:hover {
+  /*background-color: #BFFF00;*/
+}
+.container {
+  position: relative;
+  border-color: #053819;
+  border-style: solid;
+  border-radius: 10px;
+  width: 400px;
+  height: 500px;
+  text-align: center;
+  margin: 30px auto;
+}
+.container div {
+  -webkit-transition-duration: 0.5s; /* Safari */
+  transition: opacity 0.5s ease-in;
+}
+
+#menu1, #menu2 {
+  font-size: 1.8em;
+  padding-top: 40px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left: 0;
+}
+#menu1 {
+  z-index: 2
+}
+#menu2 {
+  margin-top: 50px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+}
+
+#menu1 div {
+  display: inline-block;
+}
+
+button {
+  background-color: #0a5427;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-property: background-color;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+#menu1 div button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+}
+
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50;
+}
+
+button:hover {
+  background-color: #053819;
+}
+#board-container {
+  margin-top: 20px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+#quit {
+  position: absolute;
+  padding: 0;
+  top:5px;
+  right: 5px;
+  width: 40px;
+  height: 30px;
+  text-align: center;
+}
+
+#stat-wrap {
+  border: 1px solid #4CAF50;
+  display: inline-block;
+  width: 200px;
+  margin: 10px;
+  transition: background 1s;
+}
+.score1-wrap {
+  text-align: left;
+  position: absolute;
+  display: inline-block;
+  left: 30px;
+  bottom: 20px;
+}
+.score2-wrap {
+  text-align: right;
+  position: absolute;
+  display: inline-block;
+  right: 30px;
+  bottom: 20px;
+}
+.score3-wrap {
+  margin-top: 20px;
+}
